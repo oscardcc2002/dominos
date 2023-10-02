@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice</title>
+    <link rel="stylesheet" href="../estilo/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> <!-- No carga porque la página tiene que ser hosteada-->
+</head>
+<body>
+    <div class="cabecera">
+        <div class="cabeceralogo">
+            <a href="../indice.html">
+                <img src="../images/logo_dominos.png" alt="logo domino's pizza" width="100" height="100">
+                <img src="../images/dplettering.png" alt="letras domino's pizza" width="150" height="">
+            </a>
+        </div>
+    </div>
+
+    <div class="botonera">
+        <img src="../images/navNada.png" alt="Botonera Navegación" usemap="#imbotonera">
+        <!-- Mapa de Imagen generado con http://www.image-map.net/ -->
+        <map name="imbotonera">
+            <area alt="Departamento Cocina" href="../depcocina.html" coords="9,4,134,47" shape="rect">
+            <area alt="Departamento Sobre Nosotros" href="../depsala.html" coords="134,4,297,48" shape="rect">
+            <area alt="Departamento Reparación" href="../deprepar.html" coords="297,5,467,47" shape="rect">
+            <area alt="Departamento Sala" href="../aboutus.html" coords="467,5,603,46" shape="rect">
+        </map>
+        <main>
+            <div style="background-image: url('../images/BannerReservar.png'); height: 200px; background-size: cover; position: relative;">
+                <h1 style="color: #fff; font-size: 3em; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Página de Reservas</h1>
+            </div>
+            <section class="section">
+                <div class="wrap-two-column">
+                    <div class="column-half">
+                        <h2>Reserva una mesa</h2>
+                        <p style="font-size: 24px;">El proceso es sencillo: primero, debe seleccionar la pizza deseada, elegir la cantidad y el 
+                            tamaño, y seleccionar los toppings adicionales si se desea. A continuación, debe 
+                            seleccionar la bebida que desee y especifique los detalles de entrega, incluyendo 
+                            el nombre completo, la dirección y el número de teléfono. Una vez que se han ingresado 
+                            todos los detalles, puede realizar el pedido y esperar a que llegue la pizza caliente y 
+                            lista para disfrutar. </br></br>
+                            
+                            Domino's Pizza ofrece una amplia variedad de opciones de pizza y bebidas,
+                            y también se pueden realizar pedidos para llevar y para comer en el restaurante. Además, la 
+                            página web de Domino's Pizza también ofrece información sobre las promociones actuales y los 
+                            cupones de descuento disponibles para los clientes que realicen pedidos en línea.
+                        </p>
+                            
+                    </div>
+                    <div class="column-half"> 
+                        <form action="/pedido" method="post">
+                            <div class="formulario">
+                              <h2>Pedido de Pizza</h2>
+                              <h3>Elige tu pizza</h3>
+                              <select name="tipo_pizza" required>
+                                <option value="">-- Selecciona una pizza --</option>
+                                <option value="margarita">Margarita</option>
+                                <option value="hawaiana">Hawaiana</option>
+                                <option value="barbacoa">Barbacoa</option>
+                                <option value="cuatro_quesos">Cuatro Quesos</option>
+                                <option value="vegetariana">Vegetariana</option>
+                              </select>
+                              <h3>Elige el tamaño de la pizza</h3>
+                              <select name="tamano" required>
+                                <option value="">-- Selecciona un tamaño --</option>
+                                <option value="pequena">Pequeña (4 porciones)</option>
+                                <option value="mediana">Mediana (6 porciones)</option>
+                                <option value="grande">Grande (8 porciones)</option>
+                              </select>
+                              <h3>Elige la corteza de la pizza</h3>
+                              <select name="corteza" required>
+                                <option value="">-- Selecciona una corteza --</option>
+                                <option value="original">Original</option>
+                                <option value="fina">Fina y crujiente</option>
+                                <option value="rellena">Rellena de queso</option>
+                              </select>
+                              <h3>Añade tus ingredientes</h3>
+                              <div class="ingredientes">
+                                <label><input type="checkbox" name="ingredientes[]" value="pepperoni"> Pepperoni</label>
+                                <label><input type="checkbox" name="ingredientes[]" value="jamón"> Jamón</label>
+                                <label><input type="checkbox" name="ingredientes[]" value="champiñones"> Champiñones</label>
+                                <label><input type="checkbox" name="ingredientes[]" value="pimiento"> Pimiento</label>
+                                <label><input type="checkbox" name="ingredientes[]" value="cebolla"> Cebolla</label>
+                                <label><input type="checkbox" name="ingredientes[]" value="aceitunas"> Aceitunas</label>
+                                <label><input type="checkbox" name="ingredientes[]" value="tomate"> Tomate</label>
+                                <label><input type="checkbox" name="ingredientes[]" value="queso_extra"> Queso extra</label>
+                              </div>
+                              <h3>Elige tu bebida</h3>
+                              <select name="bebida" required>
+                                <option value="">-- Selecciona una bebida --</option>
+                                <option value="coca_cola">Coca Cola</option>
+                                <option value="fanta_limón">Fanta Limón</option>
+                                <option value="fanta_naranja">Fanta Naranja</option>
+                                <option value="sprite">Sprite</option>
+                                <option value="lipton">Liptón</option>
+                                <option value="agua">Agua</option>
+                                <option value="cerveza">Cerveza</option>
+                              </select>
+
+                                <h3>Detalles de Entrega</h3>
+                                <label for="nombre">Nombre completo:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                                <label for="direccion">Dirección:</label>
+                                <input type="text" id="direccion" name="direccion" required>
+                                <label for="telefono">Teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono" required>
+
+                                <button type="submit">Pedir</button>
+                            </div>
+                        </form>
+                          
+                    </div>
+                </div>
+            </section>
+        </main>
+<!-- Footer de la Página-->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>Compañía</h4>
+                <ul>
+                    <li><a href="../aboutus.html">Sobre nosotros</a></li>
+                    <li><a href="../depcocina.html">Nuestros servicios</a></li>
+                    <li><a href="../politica/politiprivaci.html">Política de privacidad</a></li>
+                    <li><a href="https://dominos.ofertas-trabajo.infojobs.net">Programa de afiliación</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>¿Necesitas ayuda?</h4>
+                <ul>
+                    <li><a href="https://gentedominos.es/preguntas-frecuentes">FAQ</a></li>
+                    <li><a href="#">Pedidos</a></li>
+                    <li><a href="#">Volver</a></li>
+                    <li><a href="reservas.html">Reserva Mesa</a></li>
+                    <li><a href="domicilio.html">Reserva Domicilio</a></li>
+                    <li><a href="#">Opciones de Pago</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Pedidos online</h4>
+                <ul>
+                    <li><a href="#">Ver</a></li>
+                    <li><a href="#">Carrito</a></li>
+                    <li><a href="http://alergenos.dominospizza.es">Alérgenos</a></li>
+                    <li><a href="">Complementos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Síguenos</h4>
+                <div class="footer-social-links">
+                    <a href="https://es-es.facebook.com/dominospizza.es/"><img src="../images/IconoFacebook.png" alt="icono facebook" style="height: 40px; margin:0 10px 10px 0; width: 40px; line-height: 40px; border-radius: 50%; display: inline-block;"></a>
+                    <a href="https://twitter.com/DominosPizza_ES?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="../images/IconoTwitter.png" alt="icono twitter" style="height: 40px; margin:0 10px 10px 0; width: 40px; line-height: 40px; border-radius: 50%; display: inline-block;"></a>
+                    <a href="https://www.instagram.com/dominospizza_es/?hl=es"><img src="../images/IconoInstagram.png" alt="icono instagram" style="height: 40px; margin:0 10px 10px 0; width: 40px; line-height: 40px; border-radius: 50%; display: inline-block;"></a>
+                    <a href="https://www.linkedin.com/company/domino's-pizza"><img src="../images/IconoLinkedin.png" alt="icono linkedin" style="height: 40px; margin:0 10px 10px 0; width: 40px; line-height: 40px; border-radius: 50%; display: inline-block;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>

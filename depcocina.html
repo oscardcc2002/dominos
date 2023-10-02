@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        summary{
+            font-size: 160%;    
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cabecera">
+        <div class="cabeceralogo">
+            <a href="indice.html">
+                <img src="images/logo_dominos.png" alt="logo domino's pizza" width="100" height="100">
+                <img src="images/dplettering.png" alt="letras domino's pizza" width="150" height="">
+            </a>
+        </div>
+    </div>
+
+    <div class="botonera">
+        <img src="images/navCocina.png" alt="Botonera Navegación" usemap="#imbotonera">
+        <!-- Mapa de Imagen generado con http://www.image-map.net/ -->
+        <!-- En el mapa no funciona el cursor custom. Toca checkear!!-->
+        <map name="imbotonera">
+            <area alt="Departamento Cocina" href="depcocina.html" coords="9,4,134,47" shape="rect">
+            <area alt="Departamento Sobre Nosotros" href="depsala.html" coords="134,4,297,48" shape="rect">
+            <area alt="Departamento Reparación" href="deprepar.html" coords="297,5,467,47" shape="rect">
+            <area alt="Departamento Sala" href="aboutus.html" coords="467,5,603,46" shape="rect">
+        </map>
+    </div>
+
+    <!-- A partir de aquí empieza el contenido de la página --> 
+    <!-- <img src="images/mozarella.jpg" alt="Mozzarella"> -->
+    <div class="contenido">
+        <!-- Imagen & Introducción-->
+        <div class="imgintrococina">
+            <img src="images/pizzasdomi.jpg" alt="pizzas domino's">
+        </div>
+        <div class="intrococina">
+            <h2>Las mejores pizzas</h2>
+            <p>Domino's Pizza tiene una plantilla completa de cocineros encargados preparar una gran variedad de pizzas y entrantes con los ingredientes más frescos. Eso de que el tamaño no importa, que lo utilicen otros; las nuestras son más grandes y están mucho más dekiciosos. Prueba nuevos sabores, atrévete a experimentar y dinos después si merece o no la pena.</p><br><br>
+            <h2>Ingredientes</h2>
+            <p>Tenemos una enorme variedad de ingredientes para hacer que nuestras pizzas tengan un buen sabor para nuestro paladar. Somos muy cuidadosos en la eleccion de nuestros ingredientes ya que Domino's Pizza es  una de las franquicias especializadas en las pizzas. Todo tipo de carnes, ya sea ternera para nuestra Pecado Carnal, pollo Bufalo para nuestra Bufalo Chicken, bacon para nuestra Carbonara... Además tenemos nuestros mejores vegetales como cebolla, pimiento, aceitunas y una gran variedad de quesos como Mozarella, Parmesano, bolas de queso...</p><br><br>
+        </div>
+        <!-- Aquí empiezan las Secciones de Pizzas & Entrantes-->
+        <!-- Primera Sección-->
+        <details class="detailspizz">
+            <summary>
+            <b>Especialidades Deluxe</b>
+            </summary>
+
+            <div class= "pizzas">
+                <div class="columnpizz1">
+                   <h4>Texas BBQ Crispy</h4>
+                   <div class="hover">
+                    <h1>9,99€</h1>
+                   <img src="images/TexasBBQCrispy.png">
+                </div>
+
+                </div>
+                <div class="columnpizz2">
+                    <h4>Parmesana Carbonara</h4>
+                    <div class="hover">
+                        <h1>8,99€</h1>
+                    <img src="images/ParmesanaCarbonara.png">
+                    </div>
+                </div>
+
+                <div class="columnpizz3">
+                    <h4>Cremozza Bourbon</h4>
+                    <div class="hover">
+                        <h1>7,00€</h1>
+                    <img src="images/cremozzaBourbon.png">
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <!-- Segunda Sección-->
+        <details class="detailspizz">
+            <summary>
+                <b>Especialidades Clásicas</b>
+            </summary>
+
+            <div class= "pizzas">
+                <div class="columnpizz1">
+                    <h4>Pecado Carnal</h4>
+                    <div class="hover">
+                        <h1>8,99€</h1>
+                    <img src="images/PecadoCarnal.png">
+                </div>
+
+                </div>
+                <div class="columnpizz2">
+                    <h4>4 Quesos</h4>
+                    <div class="hover">
+                        <h1>14,49€</h1>
+                    <img src="images/CuatroQuesos.png">
+                    </div>
+                </div>
+
+                <div class="columnpizz3">
+                    <h4>Barbacoa</h4>
+                    <div class="hover">
+                        <h1>10,99€</h1>
+                    <img src="images/Barbacoa.png">
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <!-- Añadir Sección entrantes [Tal vez una barra deslizante horizontal]-->
+
+        <!-- Tabla de Cocina con un ejemplo de pedidos-->
+        <div class="tablaPedidos">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Tipo</th>
+                    <th>Cantidad</th>
+                    <th>Hora Entrada</th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>Carry-Out</td>
+                    <td>1x Med Original Carbonara</td>
+                    <td>15:30</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>ComeBebe</td>
+                    <td>1x Med Fina Barbacoa</td>
+                    <td>16:00</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Recoger</td>
+                    <td>1x Fam Original Peperoni</td>
+                    <td>21:45</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Recoger</td>
+                    <td>1x Fam Fina Barbacoa</br>
+                        2x Med Original Carbonara
+                    </td>
+                    <td>22:10</td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Come-Bebe</td>
+                    <td>2x Fam Original Peperoni</br>
+                        1x Hawaiiana
+                    </td>
+                    <td>22:15</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer de la Página-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Compañía</h4>
+                    <ul>
+                        <li><a href="aboutus.html">Sobre nosotros</a></li>
+                        <li><a href="depcocina.html">Nuestros servicios</a></li>
+                        <li><a href="politica/politiprivaci.html">Política de privacidad</a></li>
+                        <li><a href="https://dominos.ofertas-trabajo.infojobs.net">Programa de afiliación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>¿Necesitas ayuda?</h4>
+                    <ul>
+                        <li><a href="https://gentedominos.es/preguntas-frecuentes">FAQ</a></li>
+                        <li><a href="#">Pedidos</a></li>
+                        <li><a href="#">Volver</a></li>
+                        <li><a href="formularios/reservas.html">Reserva Mesa</a></li>
+                        <li><a href="formularios/domicilio.html">Reserva Domicilio</a></li>
+                        <li><a href="#">Opciones de Pago</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Pedidos online</h4>
+                    <ul>
+                        <li><a href="#">Ver</a></li>
+                        <li><a href="#">Carrito</a></li>
+                        <li><a href="http://alergenos.dominospizza.es">Alérgenos</a></li>
+                        <li><a href="">Complementos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Síguenos</h4>
+                    <div class="footer-social-links">
+                        <a href="https://es-es.facebook.com/dominospizza.es/"><img src="images/IconoFacebook.png" alt="icono facebook" style="height: 40px; margin:0 10px 10px 0; width: 40px; line-height: 40px; border-radius: 50%; display: inline-block;"></a>
+                        <a href="https://twitter.com/DominosPizza_ES?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/IconoTwitter.png" alt="icono twitter" style="height: 40px; margin:0 10px 10px 0; width: 40px; line-height: 40px; border-radius: 50%; display: inline-block;"></a>
+                        <a href="https://www.instagram.com/dominospizza_es/?hl=es"><img src="images/IconoInstagram.png" alt="icono instagram" style="height: 40px; margin:0 10px 10px 0; width: 40px; line-height: 40px; border-radius: 50%; display: inline-block;"></a>
+                        <a href="https://www.linkedin.com/company/domino's-pizza"><img src="images/IconoLinkedin.png" alt="icono linkedin" style="height: 40px; margin:0 10px 10px 0; width: 40px; line-height: 40px; border-radius: 50%; display: inline-block;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

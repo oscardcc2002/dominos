@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700&display=swap');
+
+/* Todo, HTML y Body*/
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+html {height:vw;}
+
+body {
+  background-color: #0078AA; 
+  font-family: Georgia, serif;
+  margin:0;
+  cursor: url(images/puntero.png), auto; 
+  height:vw;
+  padding-top:20px;
+}
+
+/* Logo Cabecera */
+
+.cabecera {
+  width:100%;
+}
+
+.cabecera > .cabeceralogo > img{
+  margin-top:5px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+
+
+.cabecera > .cabeceralogo > a > img{
+  display:block;
+  text-align: center;
+  margin-top:5px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.cabeceralogo{
+  width:min-content;
+  margin:auto;
+  transition: 2.0s;
+}
+
+.cabeceralogo:hover{
+  transform: scale(1.2);
+}
+
+/* Cursor de Pizzas sobre anchor y map [El mapa no funciona actualmente]*/
+
+a{
+  cursor: url(../images/cursor.png), auto;
+}
+
+map{
+  display:inline;
+  cursor: url(../images/cursor.png), auto;
+}
+
+/* Contenido Página Índice */
+
+
+.indice > nav{
+  margin-top:30px;
+  text-align:center;
+}
+
+.indice > nav > ul{
+  list-style:none;
+}
+
+.indice a{
+  color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size:30px;
+  font-weight:400;
+  text-decoration:none;
+  transition: 0.5s;
+  text-shadow: 3px 3px 3px #000;
+}
+
+.indice a:hover{
+  color: #f0dbdb;
+  opacity: 0.6;
+}
+
+
+.bodyindice{
+  width:min-content;
+  margin:auto;
+}
+
+.bodyindice img{ 
+  width:540px;
+  margin-top:15px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  transition: width 2s, height 2s, transform 10s;
+}
+
+.bodyindice img:hover{
+  width: 1000px;
+  height: 2000px;
+  transform: rotate(10000000deg);
+}
+
+/* Botonera Navegación*/
+
+.botonera {
+  margin:auto;
+  margin-top:30px;
+}
+
+.botonera > img {
+  display:block;
+  margin:auto;
+}
+
+/*Contenido General*/
+
+.contenido {
+}
+
+.contenido > a > img{
+  margin-top: 10px;
+  transition: 1s;
+}
+
+.contenido > a > img:hover{
+  color: #f0dbdb;
+  opacity: 0.6;
+}
+
+/* Contenido de la Página Conócenos*/
+
+/* Párrafo de Historia Domino's*/
+
+.contenido > #domilore{
+  margin-top:15px;
+  background-color:#51a1c4;    
+  font-size:23px;
+  text-align:center;
+  padding:10px;
+  border-radius:30px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+/* 4 imágenes de Dominos Antiguo */
+
+.contenido > .domantijpg{
+  margin-top:15px;
+  margin-bottom:15px;
+  text-align:center;
+}
+
+/* Contenedor de las 3 Columnas de Historia */
+
+.contenedorstory{
+  margin-bottom: 560px;
+}
+
+
+/* Columna 1 Historia Dominos */
+
+.contenido > .contenedorstory > .storydom1{
+  width:30%;
+  float:left;
+  text-align:center;
+  border-radius:30px;
+  background-color:rgba(155, 194, 211, 0.5);
+  padding:10px;
+  margin-left:3%
+}
+
+.contenido > .contenedorstory > .storydom1 > p{
+  padding: 3%;
+}
+
+/* Columna 2 Historia Dominos */
+
+.contenido > .contenedorstory > .storydom2{
+  width:30%;
+  float:left;
+  text-align:center;
+  border-radius:30px;
+  background-color:rgba(155, 194, 211, 0.5);
+  padding:10px;
+  margin-left:2%;
+  margin-right:2%;
+}
+
+.contenido > .contenedorstory > .storydom2 > p{
+  padding: 3%;
+}
+
+/* Columna 3 Historia Dominos */
+
+.contenido > .contenedorstory > .storydom3{
+  width:30%;
+  float:left;
+  text-align:center;
+  border-radius:30px;
+  background-color:rgba(155, 194, 211, 0.5);
+  padding:10px;
+  margin-right:3%
+}
+
+.contenido > .contenedorstory > .storydom3 > p{
+  padding: 3%;
+}
+
+/* Contenido Dep Sala*/
+
+.contenidosalarepar{
+  margin-top:5%;
+  margin-left:15%;
+  margin-right:15%;
+  padding:1%;
+  border-radius: 5%;
+  background-color:#51a1c4;
+}
+
+.contenidossalarepar > h1 {
+  color:white;
+  color:red;
+}
+
+.contenidossalarepar > p {
+  color:#24262b;
+}
+
+.reparloreoverflow{
+  height: 150px; 
+  overflow-y: scroll;
+  background-color:FBEAEB;
+  border-radius:4%;
+  color: #2F3C7E;
+}
+
+.contimagessala {
+  padding-bottom:100px;
+  display: flex;
+  justify-content: center;
+}
+
+.contimagessala > img {
+  float:left;
+  width:21%;
+  height:auto;
+  margin: 15px;
+}
+
+/* Estructuras de las Secciones de Pizzas Dep Cocina*/
+
+.contenido > .detailspizz {
+  margin-top:30px;
+  margin-left:50px;
+}
+
+.contenido > details > summary > b{
+  background-color:rgba(251, 234, 235, .5);
+  border-radius:10px;
+  color:rgb(56, 51, 51)
+}
+
+.contenido > details > .pizzas {
+  width:100%;
+  margin-top:15px;
+}
+
+.contenido > details > .pizzas > .columnpizz1 {
+  width:33%;
+  text-align:center;
+  float:left;
+}
+
+.contenido > details > .pizzas > .columnpizz2{
+  width:34%;
+  float:left;
+  text-align:center;
+}
+
+.contenido > details > .pizzas > .columnpizz3{
+  width:33%;
+  float:left;
+  text-align:center;
+}
+
+/*El contenedor Details que abre las pizzas*/
+
+.detailspizz {
+  transition: height 1s ease;
+}
+
+.detailspizz:not([open]) { 
+  height: 1.25em; 
+}
+
+.detailspizz[open] { 
+  height: 3.75em; 
+}
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; transform: translateX(-10px)}
+  100%  {opacity: 1; transform: translateX(0)}
+}
+
+/* Mapa del Final de Conócenos */
+
+.encuentramaps{
+  padding-top:10px;
+}
+
+/* Contenido del Footer de cada página*/
+
+.footer-container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: #24262b;
+    padding: 110px 0;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .footer-social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .footer-social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+    }
+}
+
+/* Sección del Hover de las Pizzas de Dep Cocina */
+
+.hover{
+  overflow: hidden;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  transform: translate(0,0);
+  transition: all 300ms;
+}
+
+.hover:hover{
+  box-shadow: 0px 0px 30px -5px black; 
+}
+
+.hover img{
+  transition: all 300ms;
+}
+
+.hover h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: white;
+  z-index: 2;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  border: 2px solid white;
+  background: black;
+  padding: 6px
+}
+
+.hover:hover h1{
+   transform: translate(-50%, -50%) scale(1);
+}
+.hover:before,
+.hover:after{
+  content: '';
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.6;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  border: 4px solid white;
+  z-index: 1;
+}
+
+.hover:before{
+  transform: rotate(45deg) translateY(-550px) translateX(0px);
+}
+
+.hover:after{
+  transform: rotate(45deg) translateY(550px) translateX(-60px);
+}
+
+.hover:hover:before{
+  transform: rotate(45deg) translateY(-240px) translateX(0px);
+}
+
+.hover:hover:after{
+  transform: rotate(45deg) translateY(180px) translateX(-80px);
+}
+
+/* Contenido de Página Política Privacidad*/
+
+.politiprivaci{
+  background-color:aliceblue;
+  border-radius:3px;
+  margin:15px;
+}
+
+.politiprivaci > h1 {
+  margin-left:5px;
+}
+
+.politiprivaci > p {
+  margin:10px;
+}
+
+/* Tabla de Dep Cocina */
+
+.tablaCocina > table{
+  margin:auto;
+  text-align:center;
+}
+
+.tablaCocina > th {
+  background-color:cadetblue;
+}
+
+.tablaCocina > td {
+  background-color:blanchedalmond;
+}
+
+.tablaCocina > table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.tablaCocina > tr:hover {
+  background-color: coral;
+}
+
+.tablaCocina > tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* A los th, td que se les quiera dar estilos, hay que darles class en el html y luego referenciarlo en el css de la siguiente forma */
+.title{
+  background-color:cadetblue;
+}
+
+.tablaCocina > th,td{
+  text-align: center;
+  border-radius: 5px;
+  border-style: double;
+} */
+
+/* Divs de la página de reservas*/
+
+.hero-page{
+  background: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(../images/BannerReservar.png) center;
+  background-size: cover;
+  height: 200px;
+  margin-top: 80px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap-hero-page{
+  color: #fff;
+  padding: 1rem;
+
+}
+
+.section{
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.wrap-two-column{
+  display: grid;
+  grid-template-columns: 1fr
+  1fr;
+  column-gap: 4rem;
+}
+
+/* Formulario*/
+
+.formulario{
+  display: flex;
+  flex-flow: column;
+}
+
+.formulario input, .formulario
+textarea{
+  margin: .5rem 0;
+  padding: .5 rem .2rem;
+}
+
+.formulario button{
+  width: fit-content;
+  border: none;
+  padding: .5rem 1rem;
+  background-color: #FFC300;
+  color:#fff;
+  font-size: 1.1rem;
+}
+
+@media (max-width:640px){
+  .wrap-two-column{
+    grid-template-columns: 1fr;
+
+  }
+}
+
+/* Intro Dep Cocina + Imagen*/
+
+.contenido > .intrococina {
+  margin-left:70px;
+  margin-right:140px;
+  background-color:#FBEAEB;
+  opacity:0.8;
+  width:50%;
+  margin-top:10px;
+  border-radius:10px;
+  box-shadow: 2px 2px 5px 2px rgb(0, 0, 0);
+}
+
+.contenido > .intrococina > p, h2{
+  margin-left:10px;
+  margin-right:10px;
+  padding-top:20px;
+  color:#2F3C7E;
+}
+
+.contenido > .imgintrococina{
+  width:50;
+  margin-right:5%;
+  margin-left:7%;
+  margin-top:2%;
+}
+
+.contenido > .imgintrococina > img {
+  float:right;
+  width:40%;
+  border-radius:10px;
+}
+
+/* ESTILOS TABLAS */
+
+/* Tablas Pedidos de los distintos Departamentos */
+
+.tablaPedidos table {
+
+  font-family: 'Open Sans', sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #FBE8A6;
+  box-shadow: 3px 4px 5px 4px rgb(0, 0, 0);
+}
+
+.tablaPedidos th {
+  background-color: #6e899b;
+}
+
+.tablaPedidos th, td {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.tablaPedidos thead th {
+  background-color: #16222A;
+  color: #fff;
+  border-bottom: 2px solid #EE3124;
+  font-weight: normal;
+}
+
+.tablaPedidos tbody tr:hover {
+  background-color: #EE3124;
+  color: #fff;
+}
+
+.tablaPedidos th:hover {
+  background-color: #6e899b;
+  color: #fff;
+}
+
+.tablaPedidos tbody tr:last-child {
+  border-bottom: 2px solid #EE3124;
+} 
+
+.cabecera{
+  /*position: sticky;*/
+  top: 0;
+  left: 0;
+}
+
+/* Listado Pizzas Dep Cocina */
+.listadopizzas{
+  margin-top:3%;
+  margin-left:70px;
+  background-color: #FBEAEB;
+  opacity: 0.8;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px rgb(0 0 0);
+  padding:1%;
+}
+
+/* Div class texto reservas*/
+.column-half{
+  background-color:#51a1c4;
+  border-radius:5px;
+  padding:3%;
+}
+
+/* Iframe vídeo de dominos en depsala */
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.content-container iframe {
+  width: 800px;
+  height: 371px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Foto repartidor dominos de deprepar */
+.repartidor-imagen {
+  max-width: 100%;
+  height: auto;
+}
